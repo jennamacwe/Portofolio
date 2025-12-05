@@ -3,9 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jenna Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
-    
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">JENNA.</div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Portofolio</a></li>
+                <li><a href="#">Experience</a></li>
+            </ul>
+
+            <a href="#" class="contact-btn">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section class="home">
+        <!-- Decorations -->
+        <img src="assets/bintang2.png" alt="stars" class="star-left">
+        <img src="assets/bintang-kecil.png" alt="small star" class="star-center">
+        <img src="assets/petir-kuning.png" alt="lightning" class="petir">
+        <img src="assets/awan.png" alt="cloud" class="cloud" style="margin-top: -100px; margin-right: -50px;">
+
+        <h1 class="home-title">
+            Hewoo <span id="username">(nama user)</span>,<br>
+            Welcome to my Portofolio!
+        </h1>
+    </section>
+
+    <!-- MY PROFILE SECTION -->
+    <section class="profile" id="profile" style="margin-top: -100px;">
+
+        <!-- Cloud + Photo -->
+        <div class="profile-left">
+            <!-- <img src="assets/awan.png" class="cloud-profile" alt="cloud"> -->
+            <!-- <img src="assets/petir-kuning.png" class="petir-profile" alt="lightning"> -->
+            <img src="assets/fotoku.png" class="photo" alt="My Photo">
+
+            <!-- <div class="name-tag">
+                I'm Jennatul Macwe
+            </div> -->
+        </div>
+
+        <!-- Right Text -->
+        <div class="profile-right">
+            <p class="desc">
+                Graphic Designer with a Bachelor’s background in Informatics Engineering, 
+                experienced in working with startups and freelance clients. Proficient in Adobe Illustrator, 
+                Figma, and Canva, with a strong portfolio spanning product design to social media content. 
+                Passionate about creating innovative and user-centered design solutions.
+            </p>
+
+            <p class="skills-title">My Skills:</p>
+
+            <div class="skills-list">
+                <a href="#" class="skill">Social Media Design</a>
+                <a href="#" class="skill">Illustrations</a>
+                <a href="#" class="skill">Poster</a>
+                <a href="#" class="skill">Video Editing</a>
+                <a href="#" class="skill">Product Design</a>
+            </div>
+        </div>
+
+        <!-- Bottom Right Stars -->
+        <img src="assets/bintang besar.png" class="star-big" alt="big star">
+        <img src="assets/bintang-kecil.png" class="star-small" alt="small star">
+
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio" style="margin-top: -100px;">
+
+        <!-- TOP STAR -->
+        <img src="assets/bintang-kecil.png" class="star-top" alt="small star">
+
+        <h2 class="portfolio-title">
+            <span class="medium">Highlighted</span> <span class="bold">Projects</span>
+        </h2>
+        <p class="other-sub">This is my Sosial Media Design</p>
+
+        <!-- Highlighted Projects Images -->
+        <div class="highlighted-wrapper">
+            <div class="highlighted-row all-three">
+                <img src="assets/ybb.png" class="highlight-img" alt="ybb">
+                <img src="assets/metalearn.png" class="phone-img" alt="metelearn">
+                <img src="assets/rumah.png" class="phone-img" alt="rumah roster">
+            </div>
+
+            <!-- DECORATIONS -->
+            <!-- <img src="assets/awan 2.png" class="cloud-left" alt="cloud"> -->
+            <img src="assets/awan 2.png" class="cloud-right" alt="cloud">
+            <img src="assets/petir-kuning.png" class="petir-right" alt="lightning">
+
+            <img src="assets/bintang-kecil.png" class="star-small2" alt="small star">
+            <img src="assets/bintang besar.png" class="star-big2" alt="big star">
+        </div>
+
+
+        <!-- OTHER PROJECT SECTION -->
+        <div class="other-section">
+
+            <h2 class="other-title">
+                <span class="medium">Other</span> <span class="bold">Project</span>
+            </h2>
+            <p class="other-sub">And here’s some my works</p>
+
+            <div class="other-grid">
+
+                <div class="other-card">
+                    <img src="assets/poster.png" alt="poster design">
+                    <h3>Poster Design</h3>
+                    <p>I craft visual posters for events, webinars, and F&B client, blending strong layout with purposeful messaging.</p>
+                </div>
+
+                <div class="other-card">
+                    <img src="assets/video.png" alt="video editing">
+                    <h3>Video Editing</h3>
+                    <p>I craft videos in CapCut by blending clips with music, voice-over, and minimal animations to create smooth, engaging content.</p>
+                </div>
+
+                <div class="other-card">
+                    <img src="assets/product.png" alt="educational product">
+                    <h3>Educational Product</h3>
+                    <p>I created six educational card game product. Designing visuals that make learning fun and easy to understand by kids.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <!-- <section id="experience">
+        <div class="exp-img-wrapper" style="margin-top: 100px;">
+            <img src="assets/Slice 5-1.png" class="exp-full-img" alt="Experience Timeline">
+        </div>
+    </section> -->
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" style="margin-top: 100px;">
+        <div class="contact-container" >
+
+            <div class="contact-left">
+                <h2 class="contact-title">Contact <span>Me</span></h2>
+                <p>If you vibe with my style, let’s connect!</p>
+
+                <div class="contact-icons">
+                    <a href="#" class="icon"><img src="assets/wa.png"></a>
+                    <a href="#" class="icon"><img src="assets/linkedin.png"></a>
+                    <a href="#" class="icon"><img src="assets/ig.png"></a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <h2 class="contact-title">Massage <span>Me</span></h2>
+
+                <form id="msgForm">
+                    <label>Name:</label>
+                    <input type="text" id="nameInput">
+
+                    <label>Massage:</label>
+                    <textarea id="msgInput"></textarea>
+
+                    <button type="submit" id="submitBtn">Submit</button>
+                </form>
+            </div>
+
+            <!-- OUTPUT BOX -->
+            <div id="outputBox"></div>
+
+        </div>
+    </section>
+
+
+    <!-- JS -->
+    <script src="javascript/js.js"></script>
 </body>
 </html>

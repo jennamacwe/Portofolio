@@ -1,0 +1,462 @@
+body {
+    margin: 0;
+    background-color: #FAF8F1;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #226D4D;
+    padding: 18px 0;
+    width: 100%;
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #FAF8F1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FAF8F1;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    font-weight: 600;
+}
+
+/* CONTACT BUTTON */
+.contact-btn {
+    background-color: #FFCB65;
+    padding: 10px 22px;
+    border-radius: 40px;
+    color: #226D4D;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.2s;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.contact-btn:hover {
+    background-color: #e6b454;
+}
+
+/* HOME SECTION */
+.home {
+    text-align: center;
+    margin-top: 120px;
+    position: relative;
+    min-height: 70vh;
+}
+
+.home-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #333;
+}
+
+/* DECOR IMAGES */
+.star-left {
+    position: absolute;
+    left: 150px;
+    top: 120px;
+    width: 95px;
+}
+
+.star-center {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+}
+
+.petir {
+    position: absolute;
+    right: 150px;
+    bottom: 100px;
+    width: 100px;
+}
+
+.cloud {
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    width: 260px;
+}
+
+/* MY PROFILE SECTION */
+.profile {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+    padding-bottom: 140px;
+}
+
+.profile-left {
+    position: relative;
+}
+
+.cloud-profile {
+    width: 300px;
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    z-index: 1;
+}
+
+.petir-profile {
+    width: 90px;
+    position: absolute;
+    left: -40px;
+    top: -70px;
+    z-index: 2;
+}
+
+.photo {
+    margin-top: -100px;
+    margin-left: -100px;
+    width: 600px;
+    position: relative;
+    z-index: 3;
+    border-radius: 10px;
+}
+
+.name-tag {
+    background-color: #226D4D;
+    color: #FAF8F1;
+    padding: 12px 30px;
+    border-radius: 4px;
+    width: fit-content;
+    margin: 15px auto 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.profile-right {
+    margin-left: -100px;
+    width: 500px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.skills-title {
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+.skills-list {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #FFCB65;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.2s;
+}
+
+.skill:hover {
+    /* font-weight: 600; */
+    background-color: #e6b454;
+}
+
+/* BOTTOM RIGHT STARS */
+.star-big {
+    position: absolute;
+    right: 150px;
+    bottom: 20px;
+    width: 85px;
+}
+
+.star-small {
+    position: absolute;
+    right: 105px;
+    bottom: 40px;
+    width: 35px;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio {
+    margin-top: 150px;
+    position: relative;
+    text-align: center;
+}
+
+/* STAR TOP */
+.star-top {
+    width: 30px;
+    position: absolute;
+    left: 170px;
+    top: -20px;
+}
+
+/* TITLE */
+.portfolio-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+.portfolio-title .medium {
+    font-weight: 500;
+}
+
+.portfolio-title .bold {
+    font-weight: 700;
+    color: #226D4D;
+}
+
+/* HIGHLIGHT IMAGES */
+.highlighted-wrapper {
+    position: relative;
+}
+
+.highlighted-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.highlight-img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+.phone-img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.lower {
+    margin-top: 40px;
+}
+
+/* TEXT INFORMATION */
+.text-info {
+    margin-top: 40px;
+    font-family: 'Work Sans', sans-serif;
+    color: #626262;
+    text-align: left;
+    width: 250px;
+    margin-left: auto;
+    margin-right: 200px;
+}
+
+/* DECORATIONS */
+.cloud-right {
+    position: absolute;
+    right: -30px;
+    top: -500px;
+    width: 300px;
+}
+
+.petir-right {
+    position: absolute;
+    right: 140px;
+    top: 380px;
+    width: 80px;
+}
+
+.star-small2 {
+    position: absolute;
+    right: 180px;
+    top: 60px;
+    width: 25px;
+}
+
+.star-big2 {
+    position: absolute;
+    right: 120px;
+    top: 750px;
+    width: 70px;
+}
+
+/* OTHER PROJECT */
+.other-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    margin-top: 120px;
+}
+
+.other-title .medium {
+    font-weight: 500;
+}
+
+.other-title .bold {
+    font-weight: 700;
+    color: #226D4D;
+}
+
+.other-sub {
+    margin-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: #626262;
+}
+
+.other-grid {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.other-card {
+    width: 300px;
+    text-align: left;
+}
+
+.other-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.other-card h3 {
+    margin-top: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.other-card p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    margin-top: 8px;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* EXPERIENCE SECTION */
+/* #experience {
+    background: #FBCB64;
+    padding: 80px 0;
+    text-align: center;
+} */
+
+.exp-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: #0A6635;
+    margin-bottom: 40px;
+}
+
+.exp-title span {
+    font-weight: 700;
+}
+
+/* Wrapper agar gambar tidak melebar */
+.exp-img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Batasi ukuran gambar */
+.exp-full-img {
+    width: 1500px;
+    /* max-width: 1100px;   SUPAYA TIDAK GEDE BANGET */
+    height: auto;
+}
+
+#contact {
+    background: #F4F3EA;
+    padding: 70px 0;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+}
+
+.contact-title span {
+    font-weight: 700;
+}
+
+.contact-left p {
+    font-family: 'Work Sans';
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-icons img {
+    width: 30px;
+    margin-right: 12px;
+}
+
+/* FORM */
+#msgForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+}
+
+#msgForm input,
+#msgForm textarea {
+    border: 1px solid #888;
+    padding: 6px;
+    border-radius: 4px;
+    font-family: 'Work Sans';
+}
+
+#submitBtn {
+    margin-top: 10px;
+    padding: 8px;
+    background: #F7B733;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+/* OUTPUT BOX */
+#outputBox {
+    width: 350px;
+    height: 240px;
+    border: 1px solid #aaa;
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    font-family: 'Work Sans';
+    white-space: pre-line;
+}
+
