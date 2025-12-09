@@ -1,3 +1,4 @@
+// USERNAME
 document.addEventListener("DOMContentLoaded", function () {
     let userName = prompt("Hewoo! Boleh isi nama kamu dulu?");
 
@@ -8,6 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("username").textContent = userName;
 });
 
+// BURGER MENU
+const burgerBtn = document.getElementById("burgerBtn");
+const sideMenu = document.getElementById("sideMenu");
+
+burgerBtn.addEventListener("click", () => {
+    sideMenu.classList.toggle("show");
+});
+
+// MASSAGE
 document.getElementById("msgForm").addEventListener("submit", function(event) {
     event.preventDefault();
 

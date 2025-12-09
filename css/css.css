@@ -2,6 +2,94 @@ html, body {
     overflow-x: hidden;
 }
 
+/* ============= BURGER MENU STYLE ============= */
+.burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #FAF8F1;
+}
+
+/* MENU SLIDE */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    width: 250px;
+    height: 100vh;
+    background: #226D4D;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: 0.3s ease-in-out;
+    z-index: 99999;
+}
+
+.side-menu a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    color: #FAF8F1;
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    font-weight: 700;
+}
+
+/* ============= RESPONSIVE ============= */
+@media(max-width: 900px) {
+
+    /* Sembunyikan nav desktopp */
+    .nav-links,
+    .contact-btn {
+        display: none !important;
+    }
+
+    /* Tampilkan burger */
+    .burger {
+        display: block !important;
+    }
+
+    /* Rapikan logo + burger */
+    .navbar {
+        justify-content: space-between;
+        padding: 18px 25px;
+    }
+
+    /* geser slide menu ke kanan (aktif) */
+    .side-menu.show {
+        right: 0;
+    }
+
+    /* card jadi column */
+    .other-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* profile jadi vertical */
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* timeline ke tengah */
+    .timeline {
+        margin-left: 0 !important;
+        width: 95%;
+    }
+
+    /* highlighted project jadi vertical */
+    .highlighted-row.all-three {
+        flex-direction: column;
+    }
+}
+
+.side-menu {
+    z-index: 99999;
+}
+
 body {
     margin: 0;
     /* padding-top: 18px; */
@@ -65,7 +153,8 @@ body {
 }
 
 .contact-btn:hover {
-    background-color: #e6b454;
+    background-color: #ecbb5f;
+    font-weight: 600;
 }
 
 /* HOME SECTION */
