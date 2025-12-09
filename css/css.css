@@ -1,14 +1,22 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
+    /* padding-top: 18px; */
     background-color: #FAF8F1;
     font-family: 'Work Sans', sans-serif;
 }
 
 /* NAVBAR */
 .navbar {
+    position: fixed;
     background-color: #226D4D;
     padding: 18px 0;
     width: 100%;
+    display: flex;
+    z-index: 999999
 }
 
 .navbar-container {
@@ -63,13 +71,14 @@ body {
 /* HOME SECTION */
 .home {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 200px;
     position: relative;
     min-height: 70vh;
 }
 
 .home-title {
     font-family: 'Space Grotesk', sans-serif;
+    padding-top: 100px;
     font-weight: 700;
     font-size: 40px;
     color: #333;
@@ -85,8 +94,16 @@ body {
 
 .star-center {
     position: absolute;
-    bottom: 90px;
-    left: 50%;
+    bottom: 170px;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 30px;
+}
+
+.star-center2 {
+    position: absolute;
+    top: 10px;
+    left: 75%;
     transform: translateX(-50%);
     width: 30px;
 }
@@ -117,6 +134,7 @@ body {
 
 .profile-left {
     position: relative;
+    /* margin-left: -110px; */
 }
 
 .cloud-profile {
@@ -157,12 +175,13 @@ body {
 
 .profile-right {
     margin-left: -100px;
-    width: 500px;
+    width: 800px;
     font-family: 'Work Sans', sans-serif;
 }
 
 .desc {
     font-size: 16px;
+    margin-top: 70px;
     line-height: 1.6;
 }
 
@@ -359,11 +378,158 @@ body {
 }
 
 /* EXPERIENCE SECTION */
-/* #experience {
-    background: #FBCB64;
-    padding: 80px 0;
+.experience-section {
+    background-color: #FFCB65;
+    padding: 70px 0;
+    position: relative;
+    margin-top: 5%;
+}
+
+.exp-title {
     text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #226D4D;
+    margin-bottom: 60px;
+}
+
+.exp-title span {
+    color: #114B33;
+}
+
+.cloud-left {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 180px;
+}
+
+.petir-right {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 80px;
+}
+
+/* .timeline {
+    width: 80%;
+    margin-left: 18%;
 } */
+
+/* .timeline {
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+} */
+
+.timeline {
+    width: 80%;
+    /* margin: 0 auto; */
+    margin-left: 18%;
+    /* position: relative; */
+}
+
+/* GARIS DI TENGAH */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 693px;
+    top: 240px;              /* biar ga nempel judul */
+    bottom: 160px;           /* ada jarak bawah */
+    width: 1px;             /* GARIS TIPIS */
+    background-color: #226D4D;
+    transform: translateX(-50%);
+    /* z-index: 0; */
+}
+
+
+.exp-item {
+    display: grid;
+    grid-template-columns: 1fr 80px 2fr;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.exp-left {
+    font-family: 'Work Sans', sans-serif;
+    color: #226D4D;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* .exp-center {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.exp-center {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* .check-box {
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: 3px solid #226D4D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #226D4D;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+    z-index: 2;
+} */
+
+.check-box {
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: 3px solid #226D4D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #226D4D;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+}
+
+
+.line {
+    width: 4px;
+    background: #226D4D;
+    flex-grow: 1;
+    margin-top: -5px;
+}
+
+.exp-right h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: #226D4D;
+    font-size: 20px;
+    margin: 0;
+}
+
+.exp-right p {
+    font-family: 'Work Sans', sans-serif;
+    color: #555;
+    margin: 3px 0 0 0;
+    font-size: 14px;
+}
+
 
 .exp-title {
     font-family: 'Space Grotesk', sans-serif;
@@ -387,8 +553,15 @@ body {
 /* Batasi ukuran gambar */
 .exp-full-img {
     width: 1500px;
-    /* max-width: 1100px;   SUPAYA TIDAK GEDE BANGET */
     height: auto;
+}
+
+.cloud-left-contact {
+    position: absolute;
+    /* top: 50px; */
+    top: 3370px;
+    left: 0;
+    width: 415px;
 }
 
 #contact {
