@@ -437,18 +437,18 @@ body {
     text-align: left;
     padding: 18px;
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.4); /* kotak transparan */
+    background: rgba(255, 255, 255, 0.4); 
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     transition: 0.3s ease;
-    text-decoration: none;   /* hilangkan underline */
-    color: #000;             /* biar tidak ikut warna link default */
+    text-decoration: none;  
+    color: #000;           
     display: block;
 }
 
 /* HOVER EFFECT */
 .other-card:hover {
-    transform: translateY(-10px); /* ke atas waktu hover */
+    transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
@@ -489,8 +489,8 @@ body {
     font-weight: 600;
     padding: 14px 36px;
     border-radius: 30px;
-    background-color: #FFCB65;      /* kuning khas kamu */
-    color: #226D4D;                 /* ijo teks */
+    background-color: #FFCB65;     
+    color: #226D4D;                
     text-decoration: none;
     transition: 0.3s ease;
     box-shadow: 0 6px 15px rgba(0,0,0,0.12);
@@ -499,7 +499,7 @@ body {
 /* HOVER EFFECT */
 .portfolio-btn:hover {
     transform: translateY(-4px);
-    background-color: #f3b94f;      /* kuning lebih gelap dikit */
+    background-color: #f3b94f; 
 }
 
 .portfolio-btn::after {
