@@ -270,8 +270,13 @@ body {
 
 .desc {
     font-size: 16px;
-    margin-top: 70px;
+    margin-top: 45px;
     line-height: 1.6;
+}
+
+.descbold{
+    font-weight: 400; 
+    color: #185038;
 }
 
 .skills-title {
@@ -356,6 +361,12 @@ body {
     display: flex;
     justify-content: center;
     gap: 25px;
+}
+
+.web-img {
+    width: 600px;
+    border-radius: 10px;
+    margin-top: -40px;
 }
 
 .highlight-img {
