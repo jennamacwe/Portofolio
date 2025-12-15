@@ -10,12 +10,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // BURGER MENU
+// const burgerBtn = document.getElementById("burgerBtn");
+// const sideMenu = document.getElementById("sideMenu");
+
+// burgerBtn.addEventListener("click", () => {
+//     sideMenu.classList.toggle("show");
+// });
+
+// BURGER MENU MOBILE
 const burgerBtn = document.getElementById("burgerBtn");
-const sideMenu = document.getElementById("sideMenu");
+const mobileMenu = document.getElementById("mobileMenu");
 
 burgerBtn.addEventListener("click", () => {
-    sideMenu.classList.toggle("show");
+    mobileMenu.classList.toggle("show");
 });
+
 
 // MASSAGE
 document.getElementById("msgForm").addEventListener("submit", function(event) {
@@ -26,4 +35,14 @@ document.getElementById("msgForm").addEventListener("submit", function(event) {
 
     document.getElementById("outputBox").textContent =
         "Name: " + name + "\n\nMessage: " + msg;
+});
+
+document.querySelectorAll('a[download]').forEach(link => {
+  link.addEventListener('click', e => {
+    const isMobile = /Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      e.preventDefault();
+      window.location.href = link.href;
+    }
+  });
 });

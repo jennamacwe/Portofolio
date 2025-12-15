@@ -11,7 +11,7 @@ html, body {
 }
 
 /* MENU SLIDE */
-.side-menu {
+/* .side-menu {
     position: fixed;
     top: 0;
     right: -300px; 
@@ -35,7 +35,7 @@ html, body {
 
 .side-menu a:hover {
     font-weight: 700;
-}
+} */
 
 /* ============= RESPONSIVE ============= */
 @media(max-width: 900px) {
@@ -58,9 +58,9 @@ html, body {
     }
 
     /* geser slide menu ke kanan (aktif) */
-    .side-menu.show {
+    /* .side-menu.show {
         right: 0;
-    }
+    } */
 
     /* card jadi column */
     .other-grid {
@@ -86,9 +86,9 @@ html, body {
     }
 }
 
-.side-menu {
+/* .side-menu {
     z-index: 99999;
-}
+} */
 
 body {
     margin: 0;
@@ -272,6 +272,14 @@ body {
     font-size: 16px;
     margin-top: 75px;
     line-height: 1.6;
+}
+
+.desc2 {
+    font-size: 16px;
+    margin-top: 75px;
+    line-height: 1.6;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .descbold{
@@ -476,11 +484,11 @@ body {
 }
 
 /* BUTTON WRAPPER */
-.portfolio-btn-wrapper {
+/* .portfolio-btn-wrapper {
     margin-top: 60px;
     display: flex;
     justify-content: center;
-}
+} */
 
 /* BUTTON */
 .portfolio-btn {
@@ -783,5 +791,347 @@ body {
     padding: 10px;
     font-family: 'Work Sans';
     white-space: pre-line;
+}
+
+/* ===== MOBILE NAV MENU ===== */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #226D4D;
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 9999;
+}
+
+.mobile-menu a {
+    padding: 18px;
+    text-align: center;
+    color: #FAF8F1;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.mobile-menu a:hover {
+    background-color: #1c5a40;
+}
+
+/* tampil hanya di HP */
+@media (max-width: 900px) {
+    .mobile-menu.show {
+        display: flex;
+    }
+}
+
+/* ===== MY PROFILE - MOBILE VIEW ===== */
+@media (max-width: 900px) {
+
+    .home-title{
+        font-size: 20px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .profile-left {
+        margin: 0;
+    }
+
+    .photo {
+        margin: 0;
+        width: 600px;
+        max-width: 320px;
+    }
+
+    .profile-right {
+        margin: 0;
+        margin-top: -110px;
+        width: 90%;
+    }
+
+    .desc2 {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .skills-title {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
+
+/* ===== ALL DECOR TRANSPARENT - MOBILE ===== */
+@media (max-width: 900px) {
+
+    /* SEMUA AWAN */
+    .cloud-profile,
+    .cloud-right,
+    .cloud-left,
+    .cloud-left-contact {
+        opacity: 0.25;
+        z-index: 0;
+    }
+
+    /* SEMUA BINTANG */
+    .star-center,
+    .star-center2,
+    .star-left,
+    .star-big,
+    .star-small,
+    .star-big2,
+    .star-small2,
+    .star-top {
+        opacity: 0.25;
+        z-index: 0;
+    }
+
+    /* SEMUA PETIR */
+    .petir,
+    .petir-profile,
+    .petir-right {
+        opacity: 0.25;
+        z-index: 0;
+    }
+
+    /* PASTIKAN KONTEN DI ATAS */
+    section,
+    .profile-left,
+    .profile-right,
+    .portfolio,
+    .contact-container,
+    .experience-section {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+
+/* ===== PORTFOLIO HIGHLIGHTED - MOBILE ===== */
+@media (max-width: 900px) {
+
+    /* CONTAINER */
+    .highlighted-row.all-three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    /* MOCKUP */
+    .web-img {
+        width: 90%;
+        max-width: 360px;
+        order: 1;
+    }
+
+    .portfolio .portfolio-title {
+        font-size: 20px;
+    }
+
+    .portfolio .other-sub {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+    /* DESKRIPSI */
+    .portfolio > .desc2 {
+        order: 2;
+        text-align: center;
+        width: 90%;
+        padding-top: 30px;
+        margin: 15px auto 30px auto;
+    }
+
+    /* YBB */
+    img.highlight-img {
+        width: 90%;
+        max-width: 360px;
+        order: 3;
+    }
+
+    /* METALEARN & RUMAH — KUNCI DI SINI */
+    img.phone-img[src*="metalearn"],
+    img.phone-img[src*="rumah"] {
+        order: 4;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    /* BIKIN MEREKA SATU BARIS */
+    .highlighted-row.all-three {
+        flex-direction: column;
+    }
+
+    /* KHUSUS BARIS TERAKHIR */
+    img.phone-img[src*="metalearn"],
+    img.phone-img[src*="rumah"] {
+        display: inline-flex;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    /* CENTER */
+    .highlighted-wrapper,
+    .highlighted-row {
+        text-align: center;
+    }
+}
+
+/* ===== PORTFOLIO OTHER PROJECT - MOBILE ===== */
+@media (max-width: 900px) {
+
+    .portfolio .other-card h3 {
+        font-size: 16px;
+        margin-top: -5px;
+
+    }
+
+    .portfolio .other-card p {
+        font-size: 12px;
+        margin-top: -15px;
+    }
+
+    .portfolio .other-card {
+        width: 60%;
+        height: 300px;
+    }
+
+    /* BUTTON MY DESIGN PORTFOLIO */
+    .portfolio-btn {
+        font-size: 12px;        
+        border-radius: 20px;
+    }
+
+    .portfolio-btn-wrapper {
+        margin-top: 30px;
+    }
+
+    /* DOWNLOAD CV TEXT */
+    .cv-download {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .cv-download a {
+        font-size: 12px;
+    }
+
+}
+
+/* ===== EXPERIENCE SECTION - MOBILE (FINAL FIX) ===== */
+@media (max-width: 900px){
+
+    /* SECTION TETAP NORMAL (JANGAN FLEX) */
+    .experience-section {
+        text-align: center;
+        height: 630px;
+    }
+
+    /* JUDUL DI TENGAH */
+    .exp-title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+        margin-top: -30px;
+    }
+
+    /* TIMELINE DITENGAHKAN SEBAGAI BLOK */
+    .timeline {
+        width: fit-content;
+        margin-right: 50px;
+        margin-top: 40px;
+    }
+
+    /* ITEM TETAP 3 KOLOM */
+    .exp-item {
+        grid-template-columns: auto 60px auto;
+        align-items: start;
+        column-gap: 15px;
+    }
+
+    /* TANGGAL */
+    .exp-left {
+        text-align: right;
+        white-space: nowrap;
+        font-size: 12px;
+        margin-left: 50px;
+    }
+
+    /* CHECK */
+    .exp-center {
+        justify-content: center;
+        width: 60px;
+        margin-left: -30px;
+        margin-top: -10%;
+    }
+
+    /* DESKRIPSI */
+    .exp-right {
+        text-align: left;
+        /* max-width: 230px; */
+        margin-left: -35px;
+
+    }
+
+    .exp-right h3 {
+        font-size: 16px;
+    }
+
+    .exp-right p {
+        font-size: 12px;
+    }
+
+    /* GARIS TENGAH DIMATIKAN */
+    .timeline::before {
+        display: none;
+    }
+}
+
+/* ===== CONTACT SECTION - MOBILE ONLY ===== */
+@media (max-width: 900px) {
+
+    #contact{
+        height: 70px;
+    }
+
+    /* SEMBUNYIKAN FORM & OUTPUT */
+    .contact-right,
+    #outputBox {
+        display: none;
+    }
+
+    /* CONTAINER NORMAL */
+    .contact-container {
+        justify-content: flex-start;
+        height: 50%;
+
+    }
+
+    /* CONTACT ME DI KIRI */
+    .contact-left {
+        text-align: left;
+        width: 100%;
+        margin-left: 50px;
+        margin-top: -35px;
+    }
+
+    .contact-title{
+        font-size: 20px;
+    }
+
+    .contact-left p{
+        font-size: 12px;
+    }
+
+    .contact-icons {
+        justify-content: flex-start;
+    }
 }
 
