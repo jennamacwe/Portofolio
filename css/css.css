@@ -270,13 +270,14 @@ body {
 
 .desc {
     font-size: 16px;
-    margin-top: 45px;
+    margin-top: 75px;
     line-height: 1.6;
 }
 
 .descbold{
-    font-weight: 400; 
+    font-weight: 500; 
     color: #185038;
+    line-height: 30px;
 }
 
 .skills-title {
@@ -427,7 +428,7 @@ body {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 /* WRAPPER CARD (now clickable) */
@@ -463,6 +464,7 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     font-weight: 600;
+    line-height: 30px;
 }
 
 /* PARAGRAPH */
@@ -472,6 +474,59 @@ body {
     margin-top: 8px;
     line-height: 1.5;
 }
+
+/* BUTTON WRAPPER */
+.portfolio-btn-wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+/* BUTTON */
+.portfolio-btn {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 36px;
+    border-radius: 30px;
+    background-color: #FFCB65;      /* kuning khas kamu */
+    color: #226D4D;                 /* ijo teks */
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* HOVER EFFECT */
+.portfolio-btn:hover {
+    transform: translateY(-4px);
+    background-color: #f3b94f;      /* kuning lebih gelap dikit */
+}
+
+.portfolio-btn::after {
+    content: " →";
+    transition: 0.3s ease;
+}
+
+.portfolio-btn:hover::after {
+    margin-left: 6px;
+}
+
+.cv-download {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+.cv-download a {
+    color: #226D4D;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cv-download a:hover {
+    text-decoration: underline;
+}
+
 
 
 /* EXPERIENCE SECTION */
