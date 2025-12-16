@@ -572,7 +572,7 @@ body {
 }
 
 .petir-right {
-    position: absolute;
+    /* position: absolute; */
     bottom: 40px;
     right: 40px;
     width: 80px;
@@ -948,8 +948,8 @@ body {
 
     .petir-right{
         transform: scaleX(-1);
-        margin-right: 270px;
-        margin-top: -10px;
+        margin-right: -10px;
+        margin-top: 100px;
     }
 
     /* SEMUA PETIR */
@@ -1152,6 +1152,10 @@ body {
     /* GARIS TENGAH DIMATIKAN */
     .timeline::before {
         display: none;
+    }
+
+    .check-box{
+        
     }
 }
 
