@@ -211,6 +211,11 @@ body {
     width: 260px;
 }
 
+.cloud{
+    margin-top: -93px; 
+    margin-right: -40px;
+}
+
 /* MY PROFILE SECTION */
 .profile {
     margin-top: 120px;
@@ -523,6 +528,7 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     color: #555;
+    margin-top: 30px;
 }
 
 .cv-download a {
@@ -829,7 +835,7 @@ body {
 @media (max-width: 900px) {
 
     .home-title{
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .profile {
@@ -840,19 +846,23 @@ body {
     }
 
     .profile-left {
-        margin: 0;
+        margin-top: -100px;
     }
 
     .photo {
         margin: 0;
-        width: 600px;
-        max-width: 320px;
+        width: 450px;
+        /* max-width: 320px; */
     }
 
     .profile-right {
         margin: 0;
-        margin-top: -110px;
+        margin-top: -230px;
         width: 90%;
+    }
+
+    .desc{
+        font-size: 12px;
     }
 
     .desc2 {
@@ -870,12 +880,21 @@ body {
 @media (max-width: 900px) {
 
     /* SEMUA AWAN */
+    .cloud,
     .cloud-profile,
     .cloud-right,
     .cloud-left,
     .cloud-left-contact {
         opacity: 0.25;
         z-index: 0;
+    }
+
+    .cloud{
+        margin-top: -110px;
+    }
+
+    .cloud-right{
+        margin-top: 1520px;
     }
 
     /* SEMUA BINTANG */
@@ -889,6 +908,48 @@ body {
     .star-top {
         opacity: 0.25;
         z-index: 0;
+    }
+
+    .star-big,
+    .star-small{
+        margin-bottom: -210px;
+        margin-right: -70px;
+    }
+
+    .star-big{
+        width: 60px;
+    }
+
+    .star-big2{
+        margin-right: -80px;
+    }
+
+    .star-top{
+        margin-top: -40px;
+        margin-left: -130px;
+    }
+
+    .star-center2{
+        display: none;
+    }
+
+    .star-left{
+        margin-top: -200px;
+        margin-left: -100px;
+    }
+
+    .star-center{
+        margin-left: -100px;
+    }
+
+    .petir{
+        margin-right: -100px;
+    }
+
+    .petir-right{
+        transform: scaleX(-1);
+        margin-right: 270px;
+        margin-top: -10px;
     }
 
     /* SEMUA PETIR */
