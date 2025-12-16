@@ -862,17 +862,17 @@ body {
     }
 
     .desc{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .desc2 {
         margin-top: 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .skills-title {
         margin-top: 20px;
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -993,13 +993,15 @@ body {
     }
 
     .portfolio .portfolio-title {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .portfolio .other-sub {
-        font-size: 12px;
+        font-size: 14px;
         padding-bottom: 20px;
     }
+
+
 
     /* DESKRIPSI */
     .portfolio > .desc2 {
@@ -1055,18 +1057,18 @@ body {
     }
 
     .portfolio .other-card p {
-        font-size: 12px;
+        font-size: 14px;
         margin-top: -15px;
     }
 
     .portfolio .other-card {
         width: 60%;
-        height: 300px;
+        /* height: 350px; */
     }
 
     /* BUTTON MY DESIGN PORTFOLIO */
     .portfolio-btn {
-        font-size: 12px;        
+        font-size: 14px;        
         border-radius: 20px;
     }
 
@@ -1076,12 +1078,12 @@ body {
 
     /* DOWNLOAD CV TEXT */
     .cv-download {
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 20px;
     }
 
     .cv-download a {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 }
@@ -1155,7 +1157,7 @@ body {
     }
 
     .check-box{
-        
+
     }
 }
 
