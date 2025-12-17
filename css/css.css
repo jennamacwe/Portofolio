@@ -894,7 +894,7 @@ body {
     }
 
     .cloud-right{
-        margin-top: 1520px;
+        margin-top: 1600px;
     }
 
     /* SEMUA BINTANG */
@@ -912,7 +912,7 @@ body {
 
     .star-big,
     .star-small{
-        margin-bottom: -210px;
+        margin-bottom: -245px;
         margin-right: -70px;
     }
 
@@ -922,6 +922,7 @@ body {
 
     .star-big2{
         margin-right: -80px;
+        margin-top: 50px;
     }
 
     .star-top{
@@ -949,7 +950,7 @@ body {
     .petir-right{
         transform: scaleX(-1);
         margin-right: -10px;
-        margin-top: 100px;
+        margin-top: 150px;
     }
 
     /* SEMUA PETIR */
@@ -998,7 +999,7 @@ body {
 
     .portfolio .other-sub {
         font-size: 14px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
 
@@ -1050,10 +1051,12 @@ body {
 /* ===== PORTFOLIO OTHER PROJECT - MOBILE ===== */
 @media (max-width: 900px) {
 
+    .portfolio .other-grid{
+        margin-top: -20px;
+    }
+
     .portfolio .other-card h3 {
         font-size: 16px;
-        margin-top: -5px;
-
     }
 
     .portfolio .other-card p {
