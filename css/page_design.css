@@ -460,8 +460,9 @@ body {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
+    text-align: center;
 }
 
 .contact-title {
@@ -484,40 +485,22 @@ body {
     margin-right: 12px;
 }
 
-/* FORM */
-#msgForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 350px;
+.footer {
+    text-align: center;
+    padding: 20px 16px 30px;
+    background: #F4F3EA;
 }
 
-#msgForm input,
-#msgForm textarea {
-    border: 1px solid #888;
-    padding: 6px;
-    border-radius: 4px;
-    font-family: 'Work Sans';
+.footer-line {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
 }
 
-#submitBtn {
-    margin-top: 10px;
-    padding: 8px;
-    background: #F7B733;
-    border: 1px solid #333;
-    cursor: pointer;
-}
-
-/* OUTPUT BOX */
-#outputBox {
-    width: 350px;
-    height: 240px;
-    border: 1px solid #aaa;
-    margin-top: 20px;
-    background: white;
-    padding: 10px;
-    font-family: 'Work Sans';
-    white-space: pre-line;
+.footer-text {
+    font-size: 13px;
+    color: #555;
+    font-family: 'Work Sans', sans-serif;
 }
 
 /* ===== MOBILE NAV MENU ===== */
@@ -546,9 +529,265 @@ body {
 }
 
 /* tampil hanya di HP */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .mobile-menu.show {
         display: flex;
     }
-}
 
+    .project-design {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: -20px;
+    }
+
+    .project-title {
+        font-size: 24px;
+    }
+
+    .maskot-card{
+        height: 450px;
+        margin-top: -30px;
+    }
+
+    .maskot-title{
+        font-size: 16px;
+    }
+
+    .maskot-content img{
+        width: 250px;
+        margin-left: 10px;
+    }
+
+    .maskot-text{
+        font-size: 14px;
+        margin-top: -40px;
+    }
+
+    .poster-section{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: -60px;
+    }
+
+    .poster-title{
+        font-size: 16px;
+        
+    }
+
+    .poster-sub{
+        font-size: 14px;
+    }
+    
+    .poster-container {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .poster-arrow {
+        display: none;
+    }
+
+    /* MOBILE SWIPE SUPPORT */
+    .poster-container {
+        overflow-x: auto;              /* ganti dari hidden */
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+
+    .poster-container img {
+        scroll-snap-align: start;
+    }
+
+    .poster-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .poster-container {
+        scrollbar-width: none;
+    }
+
+    .video-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-section{        
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 20px;
+        height: 300px;
+    }
+
+    .video-text {
+        order: -1;
+        text-align: center;
+        margin-top: -40px;
+        transform: translateX(50px);
+    }
+
+    /* JUDUL */
+    .video-title {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    /* SUBTITLE */
+    .video-sub {
+        font-size: 14px;
+        margin-top: 6px;
+        margin-bottom: 20px;
+    }
+
+    /* DESKRIPSI */
+    .video-desc {
+        font-size: 14px;
+    }
+
+    .video-petir{
+        display: none;
+    }
+
+    .video-grid {
+        width: 350px;
+        gap: 10px;
+        transform: translateX(-25px);
+        margin-top: -120px;
+    }
+
+    /* SECTION */
+    .product-section {
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 20px;
+        height: 1230px;
+    }
+
+    /* TITLE */
+    .product-title {
+        font-size: 18px;
+    }
+
+    .product-sub {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    /* ROW JADI VERTICAL */
+    .product-row {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: -20px;
+    }
+
+    .product-text{
+        transform: translateY(-20px);
+    }
+
+    /* GAMBAR */
+    .product-images {
+        gap: 10px;
+        transform: translateY(-30px);
+    }
+
+    .pack-img,
+    .card-img {
+        width: 160px;
+    }
+    
+    .pack-img{
+        transform: translateX(35px);
+    }
+    
+    .card-img{
+        transform: translateX(-35px);
+    }
+
+
+    /* TEKS */
+    
+
+    .product-heading {
+        font-size: 16px;
+        /* margin-bottom: 10px; */
+    }
+
+    .product-text p {
+        font-size: 14px;
+        line-height: 1.6;
+        transform: translateY(-10px);
+    }
+
+    /* TO DO */
+    .todo-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .todo-img {
+        width: 300px;
+        order: 1;
+        transform: translateY(-20px);
+    }
+
+    .todo-desc {
+        max-width: 320px;
+        font-size: 14px;
+        line-height: 1.6;
+        transform: translateY(-20px);
+    }
+
+    /* HIDE STAR DI MOBILE (BIAR BERSIH) */
+    .star {
+        display: none;
+    }
+
+    #contact{
+        height: 70px;
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+
+    /* SEMBUNYIKAN FORM & OUTPUT */
+    .contact-right,
+    #outputBox {
+        display: none;
+    }
+
+    /* CONTAINER NORMAL */
+    .contact-container {
+        justify-content: flex-start;
+        height: 50%;
+
+    }
+
+    /* CONTACT ME DI KIRI */
+    .contact-left {
+        text-align: left;
+        width: 100%;
+        margin-left: 50px;
+        margin-top: -35px;
+    }
+
+    .contact-title{
+        font-size: 20px;
+    }
+
+    .contact-left p{
+        font-size: 12px;
+    }
+
+    .contact-icons {
+        justify-content: flex-start;
+    }
+
+    .footer {
+        margin-top: -60px;
+        height: 30px;
+    }
+}

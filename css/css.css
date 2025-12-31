@@ -522,6 +522,7 @@ body {
     padding: 70px 0;
     position: relative;
     margin-top: 5%;
+    height: ;
 }
 
 .exp-title {
@@ -550,20 +551,6 @@ body {
     right: 40px;
     width: 80px;
 }
-
-/* .timeline {
-    width: 80%;
-    margin-left: 18%;
-} */
-
-/* .timeline {
-    width: 80%;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-} */
 
 .timeline {
     width: 80%;
@@ -681,15 +668,18 @@ body {
 
 #contact {
     background: #F4F3EA;
-    padding: 70px 0;
+    padding-top: 30px;  
+    padding-bottom: 90px;  
+    height: 100px;  
 }
 
 .contact-container {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
+    text-align: center;
 }
 
 .contact-title {
@@ -712,7 +702,7 @@ body {
     margin-right: 12px;
 }
 
-/* FORM */
+/* FORM
 #msgForm {
     display: flex;
     flex-direction: column;
@@ -737,7 +727,7 @@ body {
 }
 
 /* OUTPUT BOX */
-#outputBox {
+/* #outputBox {
     width: 350px;
     height: 240px;
     border: 1px solid #aaa;
@@ -746,7 +736,30 @@ body {
     padding: 10px;
     font-family: 'Work Sans';
     white-space: pre-line;
+} */
+
+.footer {
+    text-align: center;
+    padding: 20px 16px 30px;
+    background: #F4F3EA;
 }
+
+.exp-right{
+    text-align: left;
+}
+
+.footer-line {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
+}
+
+.footer-text {
+    font-size: 13px;
+    color: #555;
+    font-family: 'Work Sans', sans-serif;
+}
+
 
 /* ===== MOBILE NAV MENU ===== */
 .mobile-menu {
@@ -940,6 +953,7 @@ body {
         width: 90%;
         max-width: 360px;
         order: 1;
+        transform: translateY(25px);
     }
 
     .portfolio .portfolio-title {
@@ -948,10 +962,8 @@ body {
 
     .portfolio .other-sub {
         font-size: 14px;
-        padding-bottom: 40px;
+        padding-top: 50px;
     }
-
-
 
     /* DESKRIPSI */
     .portfolio > .desc2 {
@@ -1024,10 +1036,6 @@ body {
         border-radius: 20px;
     }
 
-    .portfolio-btn-wrapper {
-        margin-top: 30px;
-    }
-
     /* DOWNLOAD CV TEXT */
     .cv-download {
         font-size: 14px;
@@ -1046,7 +1054,7 @@ body {
     /* SECTION TETAP NORMAL (JANGAN FLEX) */
     .experience-section {
         text-align: center;
-        height: 630px;
+        height: 800px;
     }
 
     /* JUDUL DI TENGAH */
@@ -1113,7 +1121,10 @@ body {
 @media (max-width: 900px) {
 
     #contact{
-        height: 70px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        height: 70px;        
+        transform: translateY(-50px);    
     }
 
     /* SEMBUNYIKAN FORM & OUTPUT */
@@ -1147,6 +1158,11 @@ body {
 
     .contact-icons {
         justify-content: flex-start;
+    }
+
+    .footer {
+        margin-top: -60px;
+        height: 30px;
     }
 }
 

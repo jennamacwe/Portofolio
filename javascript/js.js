@@ -1,13 +1,20 @@
 // USERNAME
 document.addEventListener("DOMContentLoaded", function () {
-    let userName = prompt("Hewoo! Boleh isi nama kamu dulu?");
+    let userName = localStorage.getItem("username");
 
-    if (userName === "" || userName === null) {
-        userName = "User";
+    if (!userName) {
+        userName = prompt("Hewoo! Boleh isi nama kamu dulu?");
+
+        if (userName === "" || userName === null) {
+            userName = "User";
+        }
+
+        localStorage.setItem("username", userName);
     }
 
     document.getElementById("username").textContent = userName;
 });
+
 
 // BURGER MENU
 // const burgerBtn = document.getElementById("burgerBtn");
@@ -27,15 +34,15 @@ burgerBtn.addEventListener("click", () => {
 
 
 // MASSAGE
-document.getElementById("msgForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+// document.getElementById("msgForm").addEventListener("submit", function(event) {
+//     event.preventDefault();
 
-    const name = document.getElementById("nameInput").value;
-    const msg = document.getElementById("msgInput").value;
+//     const name = document.getElementById("nameInput").value;
+//     const msg = document.getElementById("msgInput").value;
 
-    document.getElementById("outputBox").textContent =
-        "Name: " + name + "\n\nMessage: " + msg;
-});
+//     document.getElementById("outputBox").textContent =
+//         "Name: " + name + "\n\nMessage: " + msg;
+// });
 
 document.querySelectorAll('a[download]').forEach(link => {
   link.addEventListener('click', e => {

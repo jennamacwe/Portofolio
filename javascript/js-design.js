@@ -11,7 +11,7 @@ const posterContainer = document.getElementById("posterContainer");
 const nextBtn = document.getElementById("nextPoster");
 const prevBtn = document.getElementById("prevPoster");
 
-const scrollAmount = 400; 
+const scrollAmount = 200; 
 
 // tombol kanan
 nextBtn.addEventListener("click", () => {
