@@ -30,17 +30,6 @@ html, body {
         padding: 18px 25px;
     }
 
-    /* geser slide menu ke kanan (aktif) */
-    /* .side-menu.show {
-        right: 0;
-    } */
-
-    /* card jadi column */
-    .other-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
     /* profile jadi vertical */
     .profile-container {
         flex-direction: column;
@@ -323,22 +312,6 @@ body {
     top: -20px;
 }
 
-/* TITLE */
-.portfolio-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 34px;
-    margin-bottom: 50px;
-}
-
-.portfolio-title .medium {
-    font-weight: 500;
-}
-
-.portfolio-title .bold {
-    font-weight: 700;
-    color: #226D4D;
-}
-
 /* HIGHLIGHT IMAGES */
 .highlighted-wrapper {
     position: relative;
@@ -387,6 +360,7 @@ body {
     right: -30px;
     top: -500px;
     width: 300px;
+    
 }
 
 .petir-right {
@@ -409,64 +383,6 @@ body {
     top: 750px;
     width: 70px;
 }
-
-.other-grid {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* WRAPPER CARD (now clickable) */
-.other-card {
-    width: 300px;
-    text-align: left;
-    padding: 18px;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.4); 
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    transition: 0.3s ease;
-    text-decoration: none;  
-    color: #000;           
-    display: block;
-}
-
-/* HOVER EFFECT */
-.other-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-}
-
-/* IMAGE */
-.other-card img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-/* TITLE */
-.other-card h3 {
-    margin-top: 15px;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-}
-
-/* PARAGRAPH */
-.other-card p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 15px;
-    margin-top: 8px;
-    line-height: 1.5;
-}
-
-/* BUTTON WRAPPER */
-/* .portfolio-btn-wrapper {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-} */
 
 /* BUTTON */
 .portfolio-btn {
@@ -856,7 +772,8 @@ body {
     }
 
     .cloud-right{
-        margin-top: 1600px;
+        margin-top: 1550px;
+        pointer-events: none;
     }
 
     /* SEMUA BINTANG */
@@ -956,15 +873,6 @@ body {
         transform: translateY(25px);
     }
 
-    .portfolio .portfolio-title {
-        font-size: 24px;
-    }
-
-    .portfolio .other-sub {
-        font-size: 14px;
-        padding-top: 50px;
-    }
-
     /* DESKRIPSI */
     .portfolio > .desc2 {
         order: 2;
@@ -1012,28 +920,12 @@ body {
 /* ===== PORTFOLIO OTHER PROJECT - MOBILE ===== */
 @media (max-width: 900px) {
 
-    .portfolio .other-grid{
-        margin-top: -20px;
-    }
-
-    .portfolio .other-card h3 {
-        font-size: 16px;
-    }
-
-    .portfolio .other-card p {
-        font-size: 14px;
-        margin-top: -15px;
-    }
-
-    .portfolio .other-card {
-        width: 60%;
-        /* height: 350px; */
-    }
-
     /* BUTTON MY DESIGN PORTFOLIO */
     .portfolio-btn {
         font-size: 14px;        
         border-radius: 20px;
+        position: relative;
+        z-index: 10;
     }
 
     /* DOWNLOAD CV TEXT */
