@@ -718,6 +718,10 @@ body {
         font-size: 14px;
         display: block;
     }
+
+    .fa-solid {
+        transform: translateY(1px);
+    }
     
     .poster-container {
         margin-left: -20px;

@@ -398,6 +398,28 @@ body {
     box-shadow: 0 6px 15px rgba(0,0,0,0.12);
 }
 
+.portfolio-title{
+    padding-bottom: 20px;
+}
+
+.portfolio-title .medium {
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #226D4D;
+    margin-bottom: 60px;
+}
+
+.other-sub {
+    padding-bottom: 20px;
+}
+
+.portfolio-title span {
+    color: #4f615a;
+    font-size: 32px;
+}
+
 /* HOVER EFFECT */
 .portfolio-btn:hover {
     transform: translateY(-4px);
@@ -852,6 +874,11 @@ body {
     }
 }
 
+.portfolio .other-sub2{
+    /* font-size: 14px; */
+    padding-top: 30px;
+}
+
 
 /* ===== PORTFOLIO HIGHLIGHTED - MOBILE ===== */
 @media (max-width: 900px) {
@@ -864,6 +891,27 @@ body {
         gap: 25px;
         flex-wrap: wrap;
     }
+
+    .portfolio-title{
+        padding-bottom: 20px;
+    }
+
+    .portfolio-title .medium{
+        font-size: 20px;
+    }
+    .portfolio-title span{
+        font-size: 20px;
+    }
+
+    .portfolio .other-sub{
+        font-size: 14px;
+    }
+    .portfolio .other-sub2{
+        font-size: 14px;
+        padding-top: 30px;
+    }
+
+
 
     /* MOCKUP */
     .web-img {
@@ -921,7 +969,7 @@ body {
 @media (max-width: 900px) {
 
     /* BUTTON MY DESIGN PORTFOLIO */
-    .portfolio-btn {
+    .portfolio-btn {        
         font-size: 14px;        
         border-radius: 20px;
         position: relative;
