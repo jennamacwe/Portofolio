@@ -280,7 +280,6 @@ body {
     text-decoration: none;
     color: #FAF8F1;
     font-family: 'Work Sans', sans-serif;
-    transition: 0.2s;
 }
 
 .nav-links a:hover {
@@ -288,6 +287,46 @@ body {
 }
 
 /* ================= PROJECT DESIGN ================= */
+.breadcrumb {
+    max-width: 1180px;
+    margin: 0 auto 12px;
+    padding: 0 0;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    color: #777;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb a {
+    color: #999;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    color: #226D4D;
+}
+
+.breadcrumb i {
+    font-size: 12px;
+    color: #999;
+}
+
+.breadcrumb span {
+    color: #226D4D;
+}
+
+
+.project-header {
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto 50px;
+}
+
 .project-design {
     padding: 120px 0 80px;
     background-color: #FAF8F1;
@@ -296,13 +335,36 @@ body {
 .project-title {
     text-align: center;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     color: #226D4D;
-    margin-bottom: 50px;
 }
 
 .project-title span {
+    color: #333;
     font-weight: 700;
+}
+
+.back-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    color: #226D4D;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+@media(max-width: 900px){
+    .breadcrumb{
+        font-size: 14px;
+    }
+
+    .back-btn{
+        display: none;
+    }
 }
 
 /* ================= MASKOT CARD ================= */
@@ -541,11 +603,9 @@ body {
 
 /* ARROWS */
 .poster-arrow {
-    background: #226D4D;
-    color: white;
+    color: #226D4D;
     border: none;
     width: 55px;
-    border-radius: 50%;
     font-size: 26px;
     cursor: pointer;
 }
@@ -694,12 +754,12 @@ body {
 .product-images {
     display: flex;
     align-items: center;
-    gap: 30px;
 }
 
 .pack-img {
-    width: 200px;
-    margin-right: 60px;
+    width: 350px;
+    /* margin-right: 60px; */
+
 }
 
 .card-img {
@@ -714,6 +774,11 @@ body {
 .todo-img {
     width: 90%;
     margin-bottom: 20px;
+}
+.todo-img2 {
+    width: 90%;
+    margin-bottom: 20px;
+    display: none;
 }
 
 .todo-desc {
@@ -998,7 +1063,7 @@ body {
         margin-left: 15px;
         margin-right: 15px;
         margin-top: 20px;
-        height: 1230px;
+        height: 1280px;
     }
 
     /* TITLE */
@@ -1026,21 +1091,19 @@ body {
 
     /* GAMBAR */
     .product-images {
-        gap: 10px;
+        gap: 60px;
         transform: translateY(-30px);
-    }
-
-    .pack-img,
-    .card-img {
-        width: 160px;
+        margin-bottom: 30px;
     }
     
     .pack-img{
-        transform: translateX(35px);
+        transform: translateX(30px);
+        width: 190px;
     }
     
     .card-img{
         transform: translateX(-35px);
+        width: 160px;
     }
 
 
@@ -1063,11 +1126,17 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        transform: translateY(-20px);
         gap: 20px;
     }
 
     .todo-img {
-        width: 300px;
+        display: none;
+    }
+
+    .todo-img2 {
+        display: block;
+        width: 250px;
         order: 1;
         transform: translateY(-20px);
     }

@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             confirmButtonText: "Let's Go!!",
             allowOutsideClick: false,
             allowEscapeKey: false,
+            allowOutsideClick: true,
 
             customClass: {
                 popup: 'custom-popup',
@@ -89,6 +90,7 @@ document.querySelectorAll('.js-cv-trigger').forEach(button => {
             cancelButtonText: 'Maybe later',
             reverseButtons: true,
             allowOutsideClick: false,
+            allowOutsideClick: true,
 
             customClass: {
                 popup: 'custom-swal',

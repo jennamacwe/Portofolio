@@ -63,6 +63,7 @@ document.querySelectorAll('.js-cv-trigger').forEach(button => {
             cancelButtonText: 'Maybe later',
             reverseButtons: true,
             allowOutsideClick: false,
+            allowOutsideClick: true,
 
             customClass: {
                 popup: 'custom-swal',
