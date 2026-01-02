@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenna Portfolio</title>
+    <title>Jenna's</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/css.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -17,28 +20,33 @@
     <nav class="navbar">
         <!-- MOBILE MENU -->
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#home">Home</a>
-            <a href="page_design.html">Design Porto</a>
-            <a href="#">Website Porto</a>
+            <a href="#profile">About Me</a>
+            <a href="#portfolio">Highlighted Project</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact Me</a>
         </div>
 
         <div class="navbar-container">
-            <div class="logo">JENNA.</div>
+            <div class="logo"><a href="#home">JENNA.</a></div>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="page_design.html">Design Porto</a></li>
-                <li><a href="#">Website Porto</a></li>
+                <li><a href="#profile">About Me</a></li>
+                <li><a href="#portfolio">Highlighted Project</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
 
-            <a href="#contact" class="contact-btn">Contact Me</a>
+            <!-- RIGHT ACTIONS -->
+            <div class="nav-actions">
+                <a href="#" class="dwn-btn js-cv-trigger">
+                    <span class="dwn-text">Download</span>
+                    <i class="fa-solid fa-download"></i>
+                </a>              
 
-            <!-- burger -->
-            <div class="burger" id="burgerBtn">☰</div>
+                <div class="burger" id="burgerBtn">☰</div>
+            </div>
         </div>
+
     </nav>
 
     <!-- HOME SECTION -->
@@ -61,13 +69,7 @@
 
         <!-- Cloud + Photo -->
         <div class="profile-left">
-            <!-- <img src="assets/awan.png" class="cloud-profile" alt="cloud"> -->
-            <!-- <img src="assets/petir-kuning.png" class="petir-profile" alt="lightning"> -->
             <img src="assets/fotoku.png" class="photo" alt="My Photo">
-
-            <!-- <div class="name-tag">
-                I'm Jennatul Macwe
-            </div> -->
         </div>
 
         <!-- Right Text -->
@@ -85,17 +87,15 @@
                     My Skills: <br> Web Development, Social Media Design, Illustrations, Layouting, Video Editing, Product Design.
                 </span>
             </p>
-            
-            <!-- <div class="skills-list">
-                <a href="#" class="skill"></a>
-                <a href="#" class="skill"></a>
-                <a href="#" class="skill"></a>
-                <a href="#" class="skill"></a>
-                <a href="#" class="skill"></a>
-                <a href="#" class="skill"></a>
-            </div> -->
-        </div>
 
+            <!-- disini di mobile tapi di desktop ga ada soalnya kan udah ada menunya di navbar -->
+            <div class="cv-btn-wrapper">
+                <a href="#" class="cv-btn js-cv-trigger">
+                    View My CV
+                </a>
+            </div>
+        </div>
+        
         <!-- Bottom Right Stars -->
         <img src="assets/bintang besar.png" class="star-big" alt="big star">
         <img src="assets/bintang-kecil.png" class="star-small" alt="small star">
@@ -137,9 +137,9 @@
             <span class="descbold"><br>Tools & Technologies: Laravel, MySQL, Express.js, REST API, HTML, CSS, JavaScript.</span>
         </p>
 
-        <div class="portfolio-btn-wrapper" style="margin-top: 50px;">
-            <a href="#" target="_blank" class="portfolio-btn">
-                My Other Website
+        <div class="portfolio-btn-wrapper">
+            <a href="#" class="portfolio-btn">
+                See More
             </a>
         </div>
         
@@ -158,17 +158,11 @@
         <!-- OTHER PROJECT SECTION -->
         <div class="other-section" style="margin-top: 100px;">
 
-            <div class="portfolio-btn-wrapper" style="margin-top: 50px;">
-                <a href="page_design.html" target="_blank" class="portfolio-btn">
-                    My Other Design
+            <div class="portfolio-btn-wrapper" id="portfolio-btn-wrapper">
+                <a href="page_design.html" class="portfolio-btn">
+                    See More
                 </a>
             </div>
-
-            <p class="cv-download">
-                <a href="https://drive.google.com/file/d/14KK5O3XIr7-ca5PoGohcV2psrDjcOGyk/view?usp=sharing" target="_blank" class="descbold">
-                    Open My CV
-                </a>                                
-            </p>
 
         </div>
 
@@ -301,6 +295,7 @@
 
 
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="javascript/js.js"></script>
 </body>
 </html>

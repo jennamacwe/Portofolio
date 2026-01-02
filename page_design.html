@@ -21,28 +21,34 @@
     <nav class="navbar">
         <!-- MOBILE MENU -->
         <div class="mobile-menu" id="mobileMenu">
-            <a href="index.html">Home</a>
-            <a href="page_design.html">Design Porto</a>
-            <a href="#">Website Porto</a>
-            <a href="index.html#experiencee">Experience</a>
-            <a href="#contact">Contact Me</a>
+            <a href="index.html#profile">About Me</a>
+            <a href="index.html#portfolio">Highlighted Project</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="#contact">Contact Me</a>            
         </div>
-
         <div class="navbar-container">
-            <div class="logo">JENNA.</div>
+            <div class="logo"><a href="#home">JENNA.</a></div>
 
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page_design.html">Design Porto</a></li>
-                <li><a href="#">Website Porto</a></li>
+                <li><a href="index.html#profile">About Me</a></li>
+                <li><a href="index.html#portfolio">Highlighted Project</a></li>
                 <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
 
-            <a href="#contact" class="contact-btn">Contact Me</a>
-
-            <!-- burger -->
-            <div class="burger" id="burgerBtn">☰</div>
+            <!-- RIGHT ACTIONS -->
+            <div class="nav-actions">
+                <a href="#" class="dwn-btn js-cv-trigger">
+                    <span class="dwn-text">Download</span>
+                    <i class="fa-solid fa-download"></i>
+                </a>  
+                <a href="#" class="dwn-btn-nav js-cv-trigger">
+                    <i class="fa-solid fa-download"></i>
+                </a>            
+                <div class="burger" id="burgerBtn">☰</div>
+            </div>
         </div>
+
     </nav>
 
     <!-- PROJECT DESIGN TITLE -->
@@ -275,7 +281,11 @@
     </footer>
 
 
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- JS -->
     <script src="javascript/js-design.js"></script>
+
+    
 </body>
 </html>
