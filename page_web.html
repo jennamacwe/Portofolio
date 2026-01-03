@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenna's</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/page_design.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html#profile">About Me</a>
+            <a href="index.html#portfolio">Highlighted Project</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+
+        <div class="navbar-container">
+            <div class="logo"><a href="#home">JENNA.</a></div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#profile">About Me</a></li>
+                <li><a href="index.html#portfolio">Highlighted Project</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+
+            <!-- RIGHT ACTIONS -->
+            <div class="nav-actions">
+                <a href="#" class="dwn-btn js-cv-trigger">
+                    <span class="dwn-text">Download</span>
+                    <i class="fa-solid fa-download"></i>
+                </a>              
+
+                <div class="burger" id="burgerBtn">☰</div>
+            </div>
+        </div>
+
+    </nav>
+    
+
+    <section class="project-web">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Website Development</span>
+        </div>
+
+
+        <div class="project-header">
+            <div class="project-left">
+                <a href="index.html" class="back-btn">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                </a>
+                <h2 class="project-title"><span>Website </span>Development</h2>
+            </div>
+
+            <p class="desk-header">
+                This is some of Websites I've made, starting from design, coding, and database.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="web-slider">
+        <div class="slider-wrapper">
+            
+            <!-- LEFT ARROW -->
+            <button class="poster-arrow-web left" id="prevPoster">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+            </button>
+
+
+            <!-- CARD CONTAINER -->
+            <div class="card-container" id="posterContainer">
+
+                <a href="#" class="web-card" data-project="gizi">
+                    <img src="assets/page-web/gizi-1.png" alt="Gizi Checker">
+                    <h3>Gizi Checker</h3>
+                    <p>Web-Based Nutritional Health Monitoring Application.</p>
+                </a>
+
+                <a href="#" class="web-card" data-project="game">
+                    <img src="assets/page-web/game-1.png" alt="KHS Game">
+                    <h3>KHS Game</h3>
+                    <p>Web-Based Memory Matching Game</p>
+                </a>
+
+                <a href="#" class="web-card" data-project="resto">
+                    <img src="assets/page-web/resto-1.png" alt="iRestoran">
+                    <h3>iRestoran</h3>
+                    <p>Customer-Focused Restaurant Ordering Website</p>
+                </a>
+
+                <a href="#" class="web-card" data-project="drama">>
+                    <img src="assets/page-web/drama-1.png" alt="Drama Website">
+                    <h3>Drama Website</h3>
+                    <p>Multiuser Drama Streaming Website</p>
+                </a>
+
+            </div>
+
+            <!-- RIGHT ARROW -->
+            <button class="poster-arrow-web right" id="nextPoster">
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </button>
+
+        </div>
+    </section>
+    
+
+    <section class="project-detail" id="giziDetail">
+
+        <div class="decoration-web">
+            <img src="assets/bintang-kecil.png" class="decor-star">
+            <img src="assets/bintang-kecil.png" class="decor-star2">
+            <img src="assets/bintang-kecil.png" class="decor-star3">
+            <img src="assets/bintang-kecil.png" class="decor-star4">
+            <img src="assets/bintang-kecil.png" class="decor-star5">
+            <img src="assets/petir-kuning.png" class="decor-lightning">
+            <img src="assets/petir-kuning.png" class="decor-lightning2">
+        </div>
+
+        <div class="detail-container">
+            <div class="detail-left">
+                <h2 class="detail-title">Gizi Checker</h2>
+                <p class="detail-subtitle">
+                    Web-Based Nutritional Health Monitoring Application
+                </p>
+
+                <p class="detail-desc">
+                    This web application was developed during an internship at Weza Solutions
+                    to fulfill client requirements for a nutritional health monitoring system.
+                    This application enables users to calculate BMI, determine daily calorie needs,
+                    track daily calorie consumption, monitor their nutritional history over time
+                    and also provides an admin panel for managing users and nutritional data.
+                </p>
+            </div>
+
+            <div class="detail-right">
+                <p class="tech-title">Tech Stack :</p>
+                <div class="tech-stack">
+                    <img src="assets/page-web/expressjs.png" alt="ExpressJS">
+                    <img src="assets/page-web/laravel.png" alt="Laravel">
+                    <img src="assets/page-web/mysql.png" alt="MySQL">
+                </div>
+            </div>
+        </div>  
+        
+        <div class="detail-wrapped"></div>
+        <div class="detail-actions">
+            <button class="detail-btn active" data-tab="ui">User Interface</button>
+            <button class="detail-btn" data-tab="admin">Admin Interface</button>
+            <button class="detail-btn" data-tab="db">Database Structure</button>
+        </div>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content">
+            <!-- USER INTERFACE (DEFAULT AKTIF) -->
+            <div class="tab-panel active" id="tab-ui">               
+
+                <div class="ui-item">
+                    <div class="desk">
+                        <h3>User Dashboard</h3>
+                        <p>
+                            The dashboard displays a summary of the user’s health data,
+                            including BMI history and daily calorie intake.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/gizi-2.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>BMI Checker</h3>
+                        <p>
+                            This feature allows users to calculate their BMI and see their
+                            nutritional status.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/gizi-3.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>Calorie Needs Calculator</h3>
+                        <p>
+                            Users can calculate their daily calorie needs based on activity
+                            and body metrics.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/gizi-4.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>Today’s Calorie Intake</h3>
+                        <p>
+                            Helps users track daily calorie consumption by meal.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/gizi-5.png">
+                </div>
+            </div>
+
+            <!-- ADMIN INTERFACE -->
+            <div class="tab-panel" id="tab-admin">
+                <div class="ui-item">
+                    <div class="desk">
+                        <h3>Admin Dashboard</h3>
+                        <p>
+                            Admins can access all features available in the user interface. 
+                            The difference is that the admin dashboard displays combined data 
+                            from all users, allowing admins to monitor BMI inputs, calorie needs, 
+                            and daily calorie intake across all users.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/gizi-6.png">
+                </div>
+
+                <div class="ui-item">
+                    <div>
+                        <h3>User Management</h3>
+                        <p>
+                            Admins can view a list of all registered users who use the Gizi 
+                            Checker application, making user data management easier.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/gizi-7.png">
+                </div>
+
+                <div class="ui-item">
+                    <div>
+                        <h3>Nutrition Management</h3>
+                        <p>
+                            Admins can add nutrition data by importing Excel/CSV 
+                            files and delete existing nutrition data when needed. 
+                            This feature ensures that food and calorie data remain up to date.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/gizi-8.png">
+                </div>
+            </div>
+
+            <!-- DATABASE -->
+            <div class="tab-panel" id="tab-db">
+                <div class="ui-item">
+                    <div class="desk">
+                        <h3>Food</h3>
+                        <p>
+                            Stores nutritional data imported by the admin. This table contains food 
+                            items and their nutritional values, which are used to calculate users’ 
+                            daily calorie intake.
+                        </p>
+
+                        <h3>Users</h3>
+                        <p>
+                            Stores data of registered users who use the Gizi Checker web application.
+                        </p>
+                        <h3>Calories</h3>
+                        <p>
+                            Stores users’ daily calorie intake data based on food consumption recorded for each day.
+                        </p>
+                    </div>
+                    
+                    <img class="img-db" src="assets/page-web/gizi-9.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-detail" id="gameDetail">
+        
+    </section>
+    <section class="project-detail" id="restoDetail">
+        
+    </section>
+    <section class="project-detail" id="dramaDetail">
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" >
+        <!-- <img src="assets/awan 3.png" class="cloud-left-contact"> -->
+        <div class="contact-container" >
+
+            <div class="contact-left">
+                <h2 class="contact-title">Contact <span>Me</span></h2>
+                <p>If you vibe with my style, let’s connect!</p>
+
+                <div class="contact-icons">
+                    <a href="https://wa.me/6285850726847" target="_blank" class="icon"><img src="assets/wa.png"></a>
+                    <a href="https://www.linkedin.com/in/jennatulmacwe" target="_blank" class="icon"><img src="assets/linkedin.png"></a>
+                    <a href="https://instagram.com/jnaa.w" target="_blank" class="icon"><img src="assets/ig.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <hr class="footer-line">
+        <p class="footer-text">
+            © 2026 Jennatul Macwe. All rights reserved.
+        </p>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="javascript/js.js.js"></script>
+</body>
+</html>
