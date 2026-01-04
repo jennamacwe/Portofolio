@@ -147,6 +147,9 @@ body {
     font-size: 40px;
     color: #333;
 }
+.home-title span{
+    color: #226D4D;
+}
 
 
 /* ===== SWEETALERT FONT FIX ===== */
@@ -320,14 +323,29 @@ body {
 
 .profile-right {
     margin-left: -100px;
-    width: 800px;
+    width: 780px;
     font-family: 'Work Sans', sans-serif;
 }
 
 .desc {
     font-size: 16px;
-    margin-top: 75px;
+    /* margin-top: 70px; */
     line-height: 1.6;
+}
+
+.desk-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #333;
+    margin-top: 50px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.desk-title span {
+    font-weight: 500;
+    font-size: 20px;
+    color: #226D4D;
+    margin-top: 50px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .desc2 {
@@ -340,7 +358,7 @@ body {
 
 .descbold{
     font-weight: 500; 
-    color: #185038;
+    color: #226D4D;
     line-height: 30px;
 }
 
@@ -632,7 +650,7 @@ body {
 .timeline {
     width: 80%;
     /* margin: 0 auto; */
-    margin-left: 18%;
+    margin-left: 310px;
     /* position: relative; */
 }
 
@@ -887,6 +905,22 @@ body {
     .mobile-menu.show {
         display: flex;
     }
+
+    .desk-title {
+        font-weight: 500;
+        font-size: 16px;
+        color: #333;
+        margin-top: -180px;
+        margin-right: -50px;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    .desk-title span {
+        font-weight: 500;
+        font-size: 16px;
+        color: #226D4D;
+        margin-top: 50px;
+        font-family: 'Space Grotesk', sans-serif;
+    }
 }
 
 /* ===== MY PROFILE - MOBILE VIEW ===== */
@@ -927,6 +961,7 @@ body {
 
     .desc{
         font-size: 14px;
+        margin-top: 240px;
     }
 
     .desc2 {
@@ -1092,6 +1127,9 @@ body {
         font-size: 20px;
     }
     .portfolio-title span{
+        font-size: 20px;
+    }
+    .portfolio-title .bold{
         font-size: 20px;
     }
 
