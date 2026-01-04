@@ -346,7 +346,6 @@ body {
     color: #226D4D;
 }
 
-
 .project-title span {
     color: #333;
     font-weight: 700;
@@ -369,11 +368,11 @@ body {
 }
 
 .desk-header {
-    max-width: 380px;
+    max-width: 450px;
     text-align: right;
     font-family: 'Work Sans', sans-serif;
     color: #555;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
 }
 
@@ -381,6 +380,7 @@ body {
 @media(max-width: 900px){
     .breadcrumb{
         font-size: 14px;
+        margin-left: 10px; 
     }
 
     .back-btn{
@@ -404,7 +404,7 @@ body {
     font-weight: 700;
     margin-top: -10px;
     margin-bottom: 30px;
-    color: #333;
+    color: #555;
 }
 
 .maskot-content {
@@ -484,7 +484,7 @@ body {
     font-weight: 700;
     margin-top: -10px;
     margin-bottom: 30px;
-    color: #333;
+    color: #555;
 }
 
 .ig-content {
@@ -583,6 +583,7 @@ body {
     font-size: 22px;
     text-align: center;
     margin-top: -10px;
+    color: #555;
 }
 
 .poster-sub {
@@ -695,6 +696,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     margin-bottom: 5px;
+    color: #555;
 }
 
 .video-sub {
@@ -736,6 +738,7 @@ body {
     font-size: 24px;
     font-weight: 600;
     margin-top: -20px;
+    color: #555;
 }
 
 .product-sub {
@@ -765,6 +768,7 @@ body {
 .product-heading {
     font-weight: 700;
     margin-bottom: 10px;
+    color: #555;
 }
 
 .product-row .product-text p{
@@ -994,6 +998,11 @@ body {
     .poster-sub2 {
         font-size: 14px;
         display: block;
+        
+    }
+
+    .poster-sub2 i {
+        animation: swipeHint 1.4s ease-in-out infinite;
     }
 
     .fa-solid {
@@ -1305,6 +1314,10 @@ body {
     line-height: 1.5;
 }
 
+.card-swipe {
+    display: none;
+}
+
 /* ===============================
    ARROW BUTTON
 ================================ */
@@ -1362,6 +1375,8 @@ body {
 .decoration-web{
     opacity: 40%;
     top: 200px;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .decor-star {
@@ -1421,12 +1436,6 @@ body {
     gap: 80px;
 }
 
-.decoration-web{
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-}
-
 .detail-left {
     max-width: 50%;
 }
@@ -1480,7 +1489,6 @@ body {
 
 /* BUTTON GROUP */
 
-/* gizi */
 .detail-wrapped {
     display: flex;
     padding: 3px;
@@ -1615,10 +1623,210 @@ body {
 }
 
 
+
 @media (max-width: 700px) {
+    .decoration-web{
+        display: none;
+    }
     .project-web{
         margin-left: 15px;
         margin-right: 15px;
         margin-top: -20px;
     }
+
+    .project-header {
+        display: flex;              
+        flex-direction: column;     
+        align-items: flex-start;    
+        margin-top: -10px; 
+        margin-left: 10px;               
+    }
+
+    .desk-header {
+        text-align: left;           
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 1.5;
+        margin-top: -10px;
+    }
+
+    .card-container {
+        gap: 10px;
+    }
+
+    .web-card {
+        min-width: 200px;
+        height: 240px;
+    }
+
+    .web-card img{
+        height: 120px;
+    }
+
+    .web-card h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+    .web-card p { 
+        font-size: 14px;
+    }
+
+    .card-swipe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        margin-top: -8px;
+        font-size: 14px;
+        font-family: 'Work Sans', sans-serif;
+        color: #666;
+
+        opacity: 0.9;
+        pointer-events: none; 
+    }
+
+    .card-swipe i {
+        font-size: 16px;
+        animation: swipeHint 1.4s ease-in-out infinite;
+    }
+
+    @keyframes swipeHint {
+        0% {
+            transform: translateX(0);
+            opacity: 0.4;
+        }
+        50% {
+            transform: translateX(6px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 0.4;
+        }
+    }
+
+    /* description */
+    .detail-container {
+        margin-top: -120px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;     
+        align-items: flex-start;
+        /* justify-content: space-between; */
+        gap: 80px;
+    }
+
+    .detail-left {
+        max-width: 100%;
+    }
+
+    .detail-title {
+        font-size: 20px;
+    }
+
+    .detail-subtitle {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .detail-desc {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .detail-right {
+        text-align: left;
+        margin-top: -80px;
+    }
+    
+    .tech-title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .tech-stack {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    .tech-stack img {
+        max-width: 50px;
+        width: 100%;
+        height: 50px;
+        padding: 0px;
+    }
+
+    .detail-wrapped {
+        display: flex;
+        padding: 3px;
+        border-radius: 999px;
+        border: 2px solid #ecbb5f;
+        background: transparent;
+        margin: 40px auto;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    .detail-actions {
+        display: flex;
+        gap: 3px;
+    }
+
+    .detail-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .detail-game {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .tab-content{
+        margin: -40px 20px 70px 20px;
+    }
+
+    .ui-item {
+        display: flex;
+        flex-direction: column;   
+        align-items: flex-start;
+        position: relative;
+        margin-top: 60px;
+        margin-bottom: -40px;
+    }
+
+    /* title */
+    .ui-item h3 {
+        max-width: 420px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    /* description */
+    .ui-item p {
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 420px;
+        color: #555;
+    }
+
+    .ui-item img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 18px;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+        border: 1px solid #226D4D;
+    }
+
+    .ui-item .img-db {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
 }
