@@ -49,6 +49,17 @@ burgerBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("show");
 });
 
+// klik di luar menu → nutup
+document.addEventListener("click", (e) => {
+    if (
+        mobileMenu.classList.contains("show") &&
+        !mobileMenu.contains(e.target) &&
+        !burgerBtn.contains(e.target)
+    ) {
+        mobileMenu.classList.remove("show");
+    }
+});
+
 
 // MASSAGE
 // document.getElementById("msgForm").addEventListener("submit", function(event) {
@@ -66,7 +77,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
 
         const target = document.querySelector(this.getAttribute('href'));
-        const offset = 120; // jarak scroll (px)
+        const offset = 170; // 
 
         const elementPosition = target.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - offset;
