@@ -372,14 +372,14 @@ body {
     text-align: right;
     font-family: 'Work Sans', sans-serif;
     color: #555;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
 .desk-header span {
-        font-weight: 550;
-        color: #226D4D;
-    }
+    font-weight: 550;
+    color: #226D4D;
+}
 
 
 @media(max-width: 900px){
@@ -1651,7 +1651,7 @@ body {
         font-size: 14px;
         text-align: left;           
         max-width: 100%;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.5;
         margin-top: -10px;
     }
@@ -1718,7 +1718,7 @@ body {
 
     /* description */
     .detail-container {
-        margin-top: -120px;
+        margin-top: -90px;
         margin-left: 20px;
         margin-right: 20px;
         display: flex;
