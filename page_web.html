@@ -103,7 +103,7 @@
                     <p>Customer-Focused Restaurant Ordering Website</p>
                 </a>
 
-                <a href="#" class="web-card" data-project="drama">>
+                <a href="#" class="web-card" data-project="drama">
                     <img src="assets/page-web/drama-1.png" alt="Drama Website">
                     <h3>Drama Website</h3>
                     <p>Multiuser Drama Streaming Website</p>
@@ -119,9 +119,11 @@
         </div>
     </section>
     
+    <!-- =============================================== -->
+    <!-- =====================GIZI====================== -->
+    <!-- =============================================== -->
 
     <section class="project-detail" id="giziDetail">
-
         <div class="decoration-web">
             <img src="assets/bintang-kecil.png" class="decor-star">
             <img src="assets/bintang-kecil.png" class="decor-star2">
@@ -158,17 +160,19 @@
             </div>
         </div>  
         
-        <div class="detail-wrapped"></div>
-        <div class="detail-actions">
-            <button class="detail-btn active" data-tab="ui">User Interface</button>
-            <button class="detail-btn" data-tab="admin">Admin Interface</button>
-            <button class="detail-btn" data-tab="db">Database Structure</button>
+        <div class="detail-wrapped">
+            <div class="detail-actions">
+                <button class="detail-btn active" data-tab="ui">User Interface</button>
+                <button class="detail-btn" data-tab="admin">Admin Interface</button>
+                <button class="detail-btn" data-tab="db">Database Structure</button>
+            </div>
         </div>
+        
 
         <!-- TAB CONTENT -->
         <div class="tab-content">
             <!-- USER INTERFACE (DEFAULT AKTIF) -->
-            <div class="tab-panel active" id="tab-ui">               
+            <div class="tab-panel active" data-tab="ui">               
 
                 <div class="ui-item">
                     <div class="desk">
@@ -217,7 +221,7 @@
             </div>
 
             <!-- ADMIN INTERFACE -->
-            <div class="tab-panel" id="tab-admin">
+            <div class="tab-panel" data-tab="admin">
                 <div class="ui-item">
                     <div class="desk">
                         <h3>Admin Dashboard</h3>
@@ -258,7 +262,7 @@
             </div>
 
             <!-- DATABASE -->
-            <div class="tab-panel" id="tab-db">
+            <div class="tab-panel" data-tab="db">
                 <div class="ui-item">
                     <div class="desk">
                         <h3>Food</h3>
@@ -283,14 +287,462 @@
             </div>
         </div>
     </section>
+
+    <!-- =============================================== -->
+    <!-- =====================GAME====================== -->
+    <!-- =============================================== -->
+
     <section class="project-detail" id="gameDetail">
         
-    </section>
-    <section class="project-detail" id="restoDetail">
-        
-    </section>
-    <section class="project-detail" id="dramaDetail">
+        <div class="decoration-web">
+            <img src="assets/bintang-kecil.png" class="decor-star">
+            <img src="assets/bintang-kecil.png" class="decor-star2">
+            <img src="assets/bintang-kecil.png" class="decor-star3">
+            <img src="assets/bintang-kecil.png" class="decor-star4">
+            <img src="assets/bintang-kecil.png" class="decor-star5">
+            <img src="assets/petir-kuning.png" class="decor-lightning">
+            <img src="assets/petir-kuning.png" class="decor-lightning2">
+        </div>
+        <div class="detail-container">
+            <div class="detail-left">
+                <h2 class="detail-title">KHS GAME</h2>
+                <p class="detail-subtitle">
+                    Web-Based Memory Matching Game
+                </p>
 
+                <p class="detail-desc">
+                    KHS GAME is a web-based memory matching game developed upon request from an 
+                    Instagram fansite dedicated to the Korean actress Kim Hye Soo. 
+                    The game challenges users to match image pairs featuring Kim Hye Soo within 
+                    a 20-second time limit. If all image pairs are matched before the timer 
+                    runs out, the user wins; otherwise, the user loses. This game is built 
+                    entirely on the frontend without using any database, focusing on 
+                    interactive gameplay and engaging visual design.
+                </p>
+            </div>
+            <div class="detail-right">
+                <p class="tech-title">Tech Stack :</p>
+                <div class="tech-stack">
+                    <img src="assets/page-web/html.png" alt="html">
+                    <img src="assets/page-web/css.png" alt="css">
+                    <img src="assets/page-web/js.png" alt="js">
+                </div>
+            </div>
+        </div>
+        <div class="detail-wrapped">            
+            <div class="detail-actions">
+                <span class="detail-game" data-tab="ui">User Interface</span>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content">
+            <!-- USER INTERFACE (DEFAULT AKTIF) -->
+            <div class="tab-panel active" data-tab="ui">               
+
+                <div class="ui-item">
+                    <div class="desk">
+                        <h3>Player Name Entry</h3>
+                        <p>
+                            At the beginning of the game, users are prompted to enter their name. 
+                            The page features a playful environment-themed background inspired 
+                            by gardens and the sea, along with a photo of Kim Hye Soo and 
+                            the official game title.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/game-2.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>Gameplay Screen</h3>
+                        <p>
+                            After entering their name, users are shown a pop-up message informing 
+                            them that the game has a 20-second time limit. The game then begins 
+                            with several face-down cards displayed on the screen. When a card is 
+                            clicked, it reveals an image of Kim Hye Soo. Players must match two 
+                            identical images; matched pairs remain visible, while unmatched cards 
+                            are flipped back over. The goal is to match all image pairs as quickly 
+                            as possible before time runs out.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/game-3.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>Time’s Up (Lose State)</h3>
+                        <p>
+                            If the user fails to match all image pairs within 20 seconds, a warning 
+                            screen appears indicating that the time has expired. This screen displays 
+                            the player’s score, remaining time, and provides options to either continue 
+                            playing or exit the game.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/game-4.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>Game Completed (Win State)</h3>
+                        <p>
+                            If the user successfully matches all image pairs within the time limit, 
+                            a congratulatory message is displayed. The screen shows the total score 
+                            earned, remaining time, and buttons allowing the user to replay the 
+                            game or exit.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/game-5.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================== -->
+    <!-- =====================RESTO====================== -->
+    <!-- =============================================== -->
+
+    <section id="restoDetail" class="project-detail">
+        <div class="decoration-web">
+            <img src="assets/bintang-kecil.png" class="decor-star">
+            <img src="assets/bintang-kecil.png" class="decor-star2">
+            <img src="assets/bintang-kecil.png" class="decor-star3">
+            <img src="assets/bintang-kecil.png" class="decor-star4">
+            <img src="assets/bintang-kecil.png" class="decor-star5">
+            <img src="assets/petir-kuning.png" class="decor-lightning">
+            <img src="assets/petir-kuning.png" class="decor-lightning2">
+        </div>
+
+        <div class="detail-container">
+            <div class="detail-left">
+                <h2 class="detail-title">iRestoran</h2>
+                <p class="detail-subtitle">
+                    Customer-Focused Restaurant Ordering Website
+                </p>
+
+                <p class="detail-desc">
+                    iRestoran is a web-based restaurant ordering system developed during college for 
+                    the Basic Web Programming course. This project was initiated by the team as 
+                    a proposed solution for a local UMKM in Telang, focusing exclusively on 
+                    the customer-side experience. The website allows customers to log in, 
+                    browse menus, place orders, and track their order status. The system was 
+                    built without any framework, using pure HTML, CSS, and JavaScript. 
+                    The base design was adapted from HTML Codex, while images, user flow, 
+                    navigation, database structure, and overall experience were customized 
+                    to match the UMKM’s needs and the team’s creative direction.
+                </p>
+            </div>
+
+            <div class="detail-right">
+                <p class="tech-title">Tech Stack :</p>
+                <div class="tech-stack">
+                    <img src="assets/page-web/html.png" alt="html">
+                    <img src="assets/page-web/css.png" alt="css">
+                    <img src="assets/page-web/js.png" alt="js">
+                </div>
+                </div>
+            </div>
+        </div>  
+        
+        <div class="detail-wrapped">
+            
+            <div class="detail-actions">
+                <button class="detail-btn active" data-tab="ui">User Interface</button>
+                <button class="detail-btn" data-tab="db">Database Structure</button>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content">
+            <!-- USER INTERFACE (DEFAULT AKTIF) -->
+            <div class="tab-panel active" data-tab="ui">               
+
+                <div class="ui-item">
+                    <div class="desk">
+                        <h3>Login & Register</h3>
+                        <p>
+                           Customers are required to log in using their name and phone number before 
+                           accessing the website. New users can easily create an account through 
+                           the registration feature.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/resto-2.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>Home</h3>
+                        <p>
+                            After logging in, customers are welcomed with a simple and friendly home 
+                            page featuring a home-style tagline such as “Homemade Cuisine”, 
+                            along with a clear call-to-action button to view the restaurant menu.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/resto-3.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>Product Menu</h3>
+                        <p>
+                            This page displays the restaurant’s available menu items. 
+                            Each product includes an “Add to Cart” button. Before 
+                            adding an item to the cart, a pop-up appears to allow 
+                            customers to select the desired quantity.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/resto-4.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>Cart</h3>
+                        <p>
+                            The cart page shows a list of selected products that are ready to be ordered. 
+                            Customers can review their orders and proceed to payment using the provided 
+                            action button.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/resto-5.png">
+                </div>
+
+                <div class="ui-item">
+                    <div>
+                        <h3>Orders</h3>
+                        <p>
+                            This page displays the customer’s current and past orders. Each order includes 
+                            detailed information along with its status, such as whether the order is still 
+                            being prepared or has been completed.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/resto-6.png">
+                </div>
+            </div>
+
+            
+            <!-- DATABASE -->
+            <div class="tab-panel" data-tab="db">
+                <div class="ui-item">
+                    <div class="desk">
+                        <h3>Pelanggan (Customers)</h3>
+                        <p>
+                            Stores customer account data, including login information such as name and phone number.
+                        </p>
+
+                        <h3>Pesanan (Orders)</h3>
+                        <p>
+                            Stores customer order data, including order details and order status.
+                        </p>
+                        <h3>Keranjang (Cart)</h3>
+                        <p>
+                            Stores a list of products selected by customers before the checkout process.
+                        </p>
+                        <h3>Produk (Products)</h3>
+                        <p>
+                            Stores the restaurant’s menu items available for ordering.
+                        </p>
+                    </div>
+                    
+                    <img class="img-db" src="assets/page-web/resto-7.png">
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <!-- =============================================== -->
+    <!-- =====================DRAMA===================== -->
+    <!-- =============================================== -->
+
+    <section id="dramaDetail" class="project-detail">
+        
+        <div class="decoration-web">
+            <img src="assets/bintang-kecil.png" class="decor-star">
+            <img src="assets/bintang-kecil.png" class="decor-star2">
+            <img src="assets/bintang-kecil.png" class="decor-star3">
+            <img src="assets/bintang-kecil.png" class="decor-star4">
+            <img src="assets/bintang-kecil.png" class="decor-star5">
+            <img src="assets/petir-kuning.png" class="decor-lightning">
+            <img src="assets/petir-kuning.png" class="decor-lightning2">
+        </div>
+        <div class="detail-container">
+            <div class="detail-left">
+                <h2 class="detail-title">K-Drama Streaming Website</h2>
+
+                <p class="detail-desc">
+                    This website was developed as a final project for the Web Application Development course. 
+                    The goal of the project was to build a multiuser web application with full CRUD functionality. 
+                    The website allows users to watch Korean dramas for free, while admins manage drama content 
+                    and user data. The system is divided into two roles: users who watch and save dramas, 
+                    and admins who manage dramas, genres, and user activities.
+                </p>
+            </div>
+
+            <div class="detail-right">
+                <p class="tech-title">Tech Stack :</p>
+                <div class="tech-stack">
+                    <img src="assets/page-web/html.png" alt="html">
+                    <img src="assets/page-web/css.png" alt="css">
+                </div>
+            </div>
+        </div>  
+        
+        <div class="detail-wrapped">
+
+            <div class="detail-actions">
+                <button class="detail-btn active" data-tab="ui">User Interface</button>
+                <button class="detail-btn" data-tab="admin">Admin Interface</button>
+                <button class="detail-btn" data-tab="db">Database Structure</button>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content">
+            <!-- USER INTERFACE (DEFAULT AKTIF) -->
+            <div class="tab-panel active" data-tab="ui">               
+
+                <div class="ui-item">
+                    <div class="desk">
+                        <h3>Login & Register</h3>
+                        <p>
+                            Users can log in or create an account to access the website. 
+                            This page serves as the main entry point for both users and admins.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/drama-2.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>User Home</h3>
+                        <p>
+                            After logging in as a user, the homepage displays the heading
+                             “Let’s Healing with K-Drama” along with a call-to-action 
+                             “Let’s watch K-Drama on this website”. 
+                             The page also features posters of trending Korean dramas at that time.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/drama-4.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>K-Drama List</h3>
+                        <p>
+                            When users click the K-Drama menu in the navigation bar, they are presented 
+                            with a list of currently available Korean dramas. Each drama card can be 
+                            selected to view more details.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/drama-5.png">
+                </div>
+    
+                <div class="ui-item">
+                    <div>
+                        <h3>K-Drama Detail & Watch</h3>
+                        <p>
+                            After selecting a drama, users can view detailed information including 
+                            the synopsis. The selected drama can be streamed directly on the website.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/drama-6.png">
+                </div>
+
+                <div class="ui-item">
+                    <div>
+                        <h3>Favorites</h3>
+                        <p>
+                            The Favorites page displays a list of Korean dramas that the user 
+                            has added to their favorites from the K-Drama menu.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/drama-7.png">
+                </div>
+            </div>
+
+            <!-- ADMIN INTERFACE -->
+            <div class="tab-panel" data-tab="admin">
+                <div class="ui-item">
+                    <div class="desk">
+                        <h3>K-Drama Managementd</h3>
+                        <p>
+                            After logging in as an admin, the admin is directed to the K-Drama list page. 
+                            This page displays all dramas that have been added, with options to edit or delete each drama.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/drama-8.png">
+                </div>
+
+                <div class="ui-item">
+                    <div>
+                        <h3>Add K-Drama</h3>
+                        <p>
+                            Admins can add new Korean dramas by filling in the required 
+                            information through the add K-Drama form.
+                        </p>
+                    </div>
+                    
+                    <img src="assets/page-web/drama-9.png">
+                </div>
+
+                <div class="ui-item">
+                    <div>
+                        <h3>User Accounts</h3>
+                        <p>
+                            This page allows admins to view account information of all 
+                            users who have accessed the website.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/drama-10.png">
+                </div>
+                <div class="ui-item">
+                    <div>
+                        <h3>User Favorites</h3>
+                        <p>
+                            Admins can view information about which dramas have been 
+                            added to favorites by users, including the corresponding usernames.
+                        </p>
+                    </div>
+                    <img src="assets/page-web/drama-11.png">
+                </div>
+            </div>
+
+            <!-- DATABASE -->
+            <div class="tab-panel" data-tab="db">
+                <div class="ui-item">
+                    <div class="desk">
+                        <h3>Genre</h3>
+                        <p>
+                            Stores drama genres used to categorize Korean dramas.
+                        </p>
+
+                        <h3>Favorite</h3>
+                        <p>
+                            Stores data about dramas that users have added to their favorites,
+                            linked to user accounts and K-Drama data.
+                        </p>
+                        <h3>Multiuser</h3>
+                        <p>
+                            Stores user account data along with access roles. 
+                            A value of 0 represents a user, while 1 represents an admin.
+                        </p>
+                        <h3>K-Drama</h3>
+                        <p>
+                            Stores information about Korean dramas, including title, 
+                            synopsis, genre, and streaming data.
+                        </p>
+                    </div>
+                    
+                    <img class="img-db" src="assets/page-web/drama-12.png">
+                </div>
+            </div>
+        </div>
     </section>
 
 

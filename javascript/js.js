@@ -61,6 +61,24 @@ burgerBtn.addEventListener("click", () => {
 //         "Name: " + name + "\n\nMessage: " + msg;
 // });
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 120; // jarak scroll (px)
+
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    });
+});
+
+
 document.querySelectorAll('a[download]').forEach(link => {
   link.addEventListener('click', e => {
     const isMobile = /Android/i.test(navigator.userAgent);
