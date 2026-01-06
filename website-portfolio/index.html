@@ -13,12 +13,23 @@
     <!-- Open Graph (share link) -->
     <meta property="og:title" content="Jennatul Macwe - Portfolio">
     <meta property="og:description" content="Web Development & Design Projects by Jennatul Macwe">
-    <!-- Favicon light & dark mode -->
-    <link rel="icon" href="../assets/logo-g.png" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="../assets/logo-y.png" media="(prefers-color-scheme: dark)">
-
     <!-- Fallback (browser lama) -->
-    <link rel="icon" href="../assets/logo-g.png">
+    <link id="favicon" rel="icon" href="assets/logo-g.png">
+
+    <script>
+        const darkMode = window.matchMedia('(prefers-color-scheme: dark)');
+        const favicon = document.getElementById('favicon');
+
+        function updateFavicon(e) {
+            favicon.href = e.matches
+            ? 'assets/logo-y.png'
+            : 'assets/logo-g.png';
+        }
+
+        updateFavicon(darkMode);
+        darkMode.addEventListener('change', updateFavicon);
+    </script>
+    
     <meta property="og:url" content="https://jennamacwe.github.io/Portofolio/">
     <meta property="og:type" content="website">
 
