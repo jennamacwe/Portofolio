@@ -12,6 +12,9 @@
     <!-- Open Graph (share link) -->
     <meta property="og:title" content="Jennatul Macwe - Portfolio">
     <meta property="og:description" content="Web Development & Design Projects by Jennatul Macwe">
+
+    <meta property="og:url" content="https://jennamacwe.github.io/Portofolio/">
+    <meta property="og:type" content="website">
     <!-- Fallback (browser lama) -->
     <link id="favicon" rel="icon" href="assets/logo-g.png">
 
@@ -28,9 +31,6 @@
         updateFavicon(darkMode);
         darkMode.addEventListener('change', updateFavicon);
     </script>
-
-    <meta property="og:url" content="https://jennamacwe.github.io/Portofolio/">
-    <meta property="og:type" content="website">
 
     <!-- Icons -->
     <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
@@ -374,9 +374,11 @@
                 </div>
             </div>
         </div>
-        <div class="detail-wrapped">            
+        <div class="detail-wrapped">
             <div class="detail-actions">
-                <span class="detail-game" data-tab="ui">User Interface</span>
+                <button class="detail-btn active" data-tab="ui">User Interface</button>
+                <button class="detail-btn" data-tab="admin">Admin Interface</button>
+                <button class="detail-btn" data-tab="db">Database Structure</button>
             </div>
         </div>
 
@@ -492,9 +494,9 @@
         </div>  
         
         <div class="detail-wrapped">
-            
             <div class="detail-actions">
                 <button class="detail-btn active" data-tab="ui">User Interface</button>
+                <button class="detail-btn" data-tab="admin">Admin Interface</button>
                 <button class="detail-btn" data-tab="db">Database Structure</button>
             </div>
         </div>
@@ -636,7 +638,6 @@
         </div>  
         
         <div class="detail-wrapped">
-
             <div class="detail-actions">
                 <button class="detail-btn active" data-tab="ui">User Interface</button>
                 <button class="detail-btn" data-tab="admin">Admin Interface</button>
